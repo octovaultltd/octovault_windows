@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainView</class>
+ <widget class="QWidget" name="MainView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OctoVault VPN</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>500</height>
+    </size>
+   </property>
+   <widget class="SplashView" name="splash"/>
+   <widget class="LoginView" name="login"/>
+   <widget class="SignUpView" name="signup"/>
+   <widget class="ForgetView" name="forget"/>
+   <widget class="HomeView" name="home"/>
+   <widget class="IntroViewOne" name="introOne"/>
+   <widget class="IntroViewTwo" name="introTwo"/>
+   <widget class="IntroViewThree" name="introThree"/>
+   <widget class="IntroViewFour" name="introFour"/>
+   <widget class="ResetView" name="reset"/>
+   <widget class="EmailVerifyView" name="emailVerify"/>
+   <widget class="ResetVerifyView" name="resetVerify"/>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LoginView</class>
+   <extends>QWidget</extends>
+   <header>ui/loginview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SignUpView</class>
+   <extends>QWidget</extends>
+   <header>ui/signupview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ForgetView</class>
+   <extends>QWidget</extends>
+   <header>ui/forgetview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HomeView</class>
+   <extends>QWidget</extends>
+   <header>ui/homeview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SplashView</class>
+   <extends>QWidget</extends>
+   <header>ui/splashview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntroViewOne</class>
+   <extends>QWidget</extends>
+   <header>ui/introviewone.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntroViewTwo</class>
+   <extends>QWidget</extends>
+   <header>ui/introviewtwo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntroViewThree</class>
+   <extends>QWidget</extends>
+   <header>ui/introviewthree.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntroViewFour</class>
+   <extends>QWidget</extends>
+   <header>ui/introviewfour.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ResetView</class>
+   <extends>QWidget</extends>
+   <header>ui/resetview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EmailVerifyView</class>
+   <extends>QWidget</extends>
+   <header>ui/emailverifyview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ResetVerifyView</class>
+   <extends>QWidget</extends>
+   <header>ui/resetverifyview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReferView</class>
+ <widget class="QWidget" name="ReferView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OctoVault VPN</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: transparent;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:transparent;
+border: 1px solid #FACA7F;
+border-radius: 15px;
+color:#FACA7F;
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnStart">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#FACA7F;
+border-radius: 15px;
+color:#000000;
+}</string>
+   </property>
+   <property name="text">
+    <string>Get started</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="priceBorderHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>180</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+border-color:transparent;
+background:transparent;
+border: 1px solid #36353a;
+border-radius: 10px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="priceHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>180</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblPackage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #818083;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Package</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYou">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #818083;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>You</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriend">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #818083;
+border-bottom:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Friend</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPackageOne">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>1 month</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPackageTwo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>3 months</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPackageThree">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>6 months</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPackageFour">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>12 months</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPackageFive">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>24 months</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYouOne">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYouTwo">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$1.5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYouThree">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYouFour">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblYouFive">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-right:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriendOne">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$0.5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriendTwo">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriendThree">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriendFour">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+border-bottom:1px solid #36353a;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFriendFive">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: #FFFFFF;
+padding-left:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>$4</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="bottomHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblInfoLogo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>13</y>
+      <width>14</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../assets/assets.qrc">:/img/images/icon_info.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblInfoText">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>0</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:#FACA7F;
+}</string>
+    </property>
+    <property name="text">
+     <string>You can request a withdraw after a month you reached the minimum of $10.</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="oneHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>180</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblOneLogo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../assets/assets.qrc">:/img/images/icon_number_one.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblOneText">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>0</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:#FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Refer your friend through your refferal code</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="twoHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>35</y>
+     <width>180</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblTwoLogo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../assets/assets.qrc">:/img/images/icon_number_two.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTwoText">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>0</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:#FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Your friend signs up and redeem your code</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="threeHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>180</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblThreeLogo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../assets/assets.qrc">:/img/images/icon_number_three.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblThreeText">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>0</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:#FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Your friend purchases a premium subscription</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="fourHolder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>85</y>
+     <width>180</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblFourLogo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../assets/assets.qrc">:/img/images/icon_number_four.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFourText">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>0</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:#FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Both of you get reward in your referral balance</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../assets/assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
